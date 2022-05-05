@@ -9,7 +9,8 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
+- `frontend`: another [Next.js](https://nextjs.org) app
+- `backend`: another [Nest.js](https://nestjs.com) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -27,6 +28,10 @@ This turborepo has some additional tools already setup for you:
 ## Setup
 
 This repository is used in the `npx create-turbo` command, and selected when choosing which package manager you wish to use with your monorepo (Yarn).
+
+```
+yarn workspace <workspace> add <package> (--dev)
+```
 
 ### Build
 
